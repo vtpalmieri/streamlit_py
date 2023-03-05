@@ -3,7 +3,7 @@ from PIL import Image
 from json import loads
 from pandas import read_csv
 from pandas import read_excel
-from spacy import load
+# from spacy import load
 from streamlit_ace import st_ace, THEMES, LANGUAGES
 
 st.title("Hello Internet")
@@ -42,7 +42,7 @@ else:
     st.error('Nenhum arquivo carregado.')
 
 
-nlp = load('pt_core_news_lg')
+# nlp = load('pt_core_news_lg')
 
 bar = st.sidebar
 
