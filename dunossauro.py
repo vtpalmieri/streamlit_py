@@ -4,7 +4,7 @@ from json import loads
 from pandas import read_csv
 from pandas import read_excel
 # from spacy import load
-from streamlit_ace import st_ace, THEMES, LANGUAGES
+# from streamlit_ace import st_ace, THEMES, LANGUAGES
 
 st.title("Hello Internet")
 st.write("texto")
@@ -42,28 +42,29 @@ else:
     st.error('Nenhum arquivo carregado.')
 
 
+    
 # nlp = load('pt_core_news_lg')
 
-bar = st.sidebar
+# bar = st.sidebar
 
-categoria = bar.selectbox('Categoria', ['Exportivo', 'Econômico'])
+# categoria = bar.selectbox('Categoria', ['Exportivo', 'Econômico'])
 
-text = st.text_area('Texto:')
+# text = st.text_area('Texto:')
 
-doc = nlp(text)
+# doc = nlp(text)
 
-if text and categoria == 'Eportivo':
-    filtro = bar.multiselect(
-        'Sub-categoria',
-        ['Importado', 'Nacional', 'Exclusivo']
-        )
+# if text and categoria == 'Eportivo':
+#    filtro = bar.multiselect(
+#        'Sub-categoria',
+#        ['Importado', 'Nacional', 'Exclusivo']
+#        )
 
 
-st.title('Editor de texto:')
+# st.title('Editor de texto:')
 
-c1, c2 = st.columns([3, 1])
-with c1:
-    content = st_ace(
-        theme=c2.selectbox('Tema',options=THEMES),
-        language=c2.selectbox('Linguagem',options=LANGUAGES)
-    )
+# c1, c2 = st.columns([3, 1])
+# with c1:
+#     content = st_ace(
+#         theme=c2.selectbox('Tema',options=THEMES),
+#         language=c2.selectbox('Linguagem',options=LANGUAGES)
+#     )
