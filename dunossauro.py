@@ -4,7 +4,7 @@ from json import loads
 from pandas import read_csv
 from pandas import read_excel
 from spacy import load
-from streamlit_ace import st_ace, THEMES, LANGUAGES
+# from streamlit_ace import st_ace, THEMES, LANGUAGES
 
 st.title("Hello Internet")
 st.write("texto")
