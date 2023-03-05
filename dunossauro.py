@@ -42,22 +42,21 @@ else:
     st.error('Nenhum arquivo carregado.')
 
 
-    
-# nlp = load('pt_core_news_lg')
+nlp = load('pt_core_news_lg')
 
-# bar = st.sidebar
+bar = st.sidebar
 
-# categoria = bar.selectbox('Categoria', ['Exportivo', 'Econômico'])
+categoria = bar.selectbox('Categoria', ['Exportivo', 'Econômico'])
 
-# text = st.text_area('Texto:')
+text = st.text_area('Texto:')
 
-# doc = nlp(text)
+doc = nlp(text)
 
-# if text and categoria == 'Eportivo':
-#    filtro = bar.multiselect(
-#        'Sub-categoria',
-#        ['Importado', 'Nacional', 'Exclusivo']
-#        )
+if text and categoria == 'Eportivo':
+   filtro = bar.multiselect(
+       'Sub-categoria',
+       ['Importado', 'Nacional', 'Exclusivo']
+       )
 
 
 # st.title('Editor de texto:')
